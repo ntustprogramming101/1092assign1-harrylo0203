@@ -7,9 +7,9 @@ PImage life;
 PImage soldier;
 PImage robot;
 
-float soldierX = 80;
-float soldierWidth = 80;
-float hogWidth = 80;
+int soldierX = 80;
+int soldierWidth = 80;
+int hogWidth = 80;
 
 //soldier random move
 float soldierY = X*floor(random(2,5.99));
@@ -18,9 +18,9 @@ float soldierY = X*floor(random(2,5.99));
 float robotX = X*floor(random(2,7.99));
 float robotY = X*floor(random(2,5.99));
 
-float soldierSpeed = 5;
-float grass = 15;
-float lifeWidth = 50;
+int soldierSpeed = 5;
+int grass = 15;
+int lifeWidth = 50;
 
 void setup() {
 	size(640, 480, P2D);
@@ -70,7 +70,7 @@ void draw() {
 
   //robot
   robot = loadImage("robot.png");
-    image(robot, robotX, robotY);  
+    image(robot, robotX, robotY); 
 
 }
   
