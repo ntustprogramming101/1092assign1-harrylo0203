@@ -26,7 +26,7 @@ void setup() {
 	size(640, 480, P2D);
 
   //background
-  bg = loadImage("bg.jpg");
+  bg = loadImage("img/bg.jpg");
     image(bg, 0, 0, 640, 480);
     
   //grass
@@ -35,11 +35,11 @@ void setup() {
   rect(0,X*2-grass,X*8,grass);
   
   //groundhog
-  hog = loadImage("groundhog.png");
+  hog = loadImage("img/groundhog.png");
     image(hog, X*4-hogWidth/2, X);
     
   //life
-  life = loadImage("life.png");
+  life = loadImage("img/life.png");
     image(life , 10, 10);
     image(life , 10+lifeWidth+20, 10);
     image(life , 10+(lifeWidth+20)*2, 10);
@@ -57,11 +57,11 @@ void setup() {
 void draw() {
   
   //soil
-  soil = loadImage("soil.png");
+  soil = loadImage("img/soil.png");
   image(soil, 0, X*2, X*8, X*4);
   
   //soldier
-  soldier = loadImage("soldier.png");
+  soldier = loadImage("img/soldier.png");
     image(soldier, soldierX-soldierWidth, soldierY);  
   
   //soldier move to right
@@ -69,7 +69,7 @@ void draw() {
     soldierX%=640+soldierWidth;
 
   //robot
-  robot = loadImage("robot.png");
+  robot = loadImage("img/robot.png");
     image(robot, robotX, robotY); 
 
 }
