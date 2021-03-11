@@ -73,4 +73,3 @@ void draw() {
     image(robot, robotX, robotY); 
 
 }
-  
