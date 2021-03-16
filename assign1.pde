@@ -43,6 +43,8 @@ void setup() {
     image(life , 10, 10);
     image(life , 10+lifeWidth+20, 10);
     image(life , 10+(lifeWidth+20)*2, 10);
+    
+    println("test");
 
   //big sun
   fill(255,255,0);
