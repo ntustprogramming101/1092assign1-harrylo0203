@@ -71,5 +71,6 @@ void draw() {
   //robot
   robot = loadImage("img/robot.png");
     image(robot, robotX, robotY); 
+    //
 
 }
