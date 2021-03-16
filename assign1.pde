@@ -43,16 +43,14 @@ void setup() {
     image(life , 10, 10);
     image(life , 10+lifeWidth+20, 10);
     image(life , 10+(lifeWidth+20)*2, 10);
-    
-    println("test");
 
   //big sun
   fill(255,255,0);
-  circle(640-50,50,120+5*2);
+  ellipse(640-50,50,120+5*2,120+5*2);
   
   //small sun
   fill(253,184,19);
-  circle(640-50,50,120);
+  ellipse(640-50,50,120,120);
 
 }
 
@@ -73,6 +71,5 @@ void draw() {
   //robot
   robot = loadImage("img/robot.png");
     image(robot, robotX, robotY); 
-    //
 
 }
